@@ -41,6 +41,24 @@ export const books = [
   {
     title: 'The Middle of Things',
     author: 'J.S. Fletcher',
+    queryType: 'nearby',
+    query: 'Viner',
+    question: 'Nearby Words',
+    numChapters: 29,
+    before: [
+      ['the', 8],
+      ['he', 6],
+      ['and', 19]
+    ],
+    after: [
+      ['had', 13],
+      ['a', 14],
+      ['to', 12]
+    ]
+  },
+  {
+    title: 'The Middle of Things',
+    author: 'J.S. Fletcher',
     queryType: 'occurrences',
     query: 'Cortelyon',
     question: 'Perpetrator',
@@ -195,6 +213,24 @@ export const books = [
       30: 19,
       31: 5
     }
+  },
+  {
+    title: 'Scarhaven Keep',
+    author: 'J.S. Fletcher',
+    queryType: 'nearby',
+    query: 'Richard Copplestone|Copplestone',
+    question: 'Nearby Words',
+    numChapters: 31,
+    before: [
+      ['this', 1],
+      ['is', 1],
+      ['Mr', 1]
+    ],
+    after: [
+      ['had', 18],
+      ['the', 20],
+      ['the', 9]
+    ]
   },
   {
     title: 'Scarhaven Keep',
@@ -361,6 +397,24 @@ export const books = [
   {
     title: 'The Talleyrand Maxim',
     author: 'J.S. Fletcher',
+    queryType: 'nearby',
+    query: 'Linford Pratt|Pratt',
+    question: 'Nearby Words',
+    numChapters: 28,
+    before: [
+      ['Barford', 2],
+      ['to', 2],
+      ['to', 3]
+    ],
+    after: [
+      ['had', 37],
+      ['to', 21],
+      ['a', 14]
+    ]
+  },
+  {
+    title: 'The Talleyrand Maxim',
+    author: 'J.S. Fletcher',
     queryType: 'occurrences',
     query: 'Harper Mallathorpe|Harper|Mallathorpe',
     question: 'Perpetrator',
@@ -517,6 +571,24 @@ export const books = [
       35: 19,
       36: 21
     }
+  },
+  {
+    title: 'The Middle Temple Murder',
+    author: 'J.S. Fletcher',
+    queryType: 'nearby',
+    query: 'Frank Spargo|Frank|Spargo',
+    question: 'Nearby Words',
+    numChapters: 36,
+    before: [
+      ['This', 1],
+      ['is', 1],
+      ['Mr', 2]
+    ],
+    after: [
+      ['had', 25],
+      ['the', 34],
+      ['the', 32]
+    ]
   },
   {
     title: 'The Middle Temple Murder',
@@ -706,6 +778,24 @@ export const books = [
   {
     title: "Dead Men's Money",
     author: 'J.S. Fletcher',
+    queryType: 'nearby',
+    query: 'Hugh Moneylaw|Hugh|Moneylaw',
+    question: 'Nearby Words',
+    numChapters: 37,
+    before: [
+      ['what', 1],
+      ['the', 1],
+      ['witness', 1]
+    ],
+    after: [
+      ['', 0],
+      ['', 0],
+      ['', 0]
+    ]
+  },
+  {
+    title: "Dead Men's Money",
+    author: 'J.S. Fletcher',
     queryType: 'occurrences',
     query: 'Gilbert Carstairs|Meekin',
     question: 'Perpetrator',
@@ -847,3 +937,12 @@ export const books = [
 ]
 
 export const searchableKeys = ['title', 'author', 'question']
+
+export const barChartKeys = ['Nearby Words']
+
+export const lineChartKeys = [
+  'Crime',
+  'Detective',
+  'Perpetrator',
+  'Other Suspects'
+]
